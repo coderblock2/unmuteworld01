@@ -5,7 +5,7 @@
 import { User, Post, Category, PostBasis } from '../types';
 
 // Use environment variable for production, fallback to localhost for development
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://unmuteworld.onrender.com/api';
 
 // --- HELPER FUNCTION ---
 const apiFetch = async (endpoint: string, options: RequestInit = {}) => {
