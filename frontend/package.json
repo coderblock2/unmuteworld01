@@ -1,0 +1,38 @@
+{
+  "name": "copy-of-unmute-world",
+  "private": true,
+  "version": "0.0.0",
+  "main": "server/index.js",
+ "scripts": {
+  "client": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "start": "vite",        
+  "dev": "concurrently \"npm run server\" \"npm run client\""
+},
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "nodemailer": "^6.9.14",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.6.3",
+    "recharts": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}
