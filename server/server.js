@@ -17,7 +17,10 @@ const app = express();
 
 // --- Middleware ---
 // Enable CORS for all routes and origins
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173', 'https://unmuteworld.vercel.app'],
+  credentials: true
+}));
 // Parse JSON bodies
 app.use(express.json());
 
